@@ -1,0 +1,45 @@
+1.api for registering a new user
+   
+    url:http://127.0.0.1:8000/api/register/
+    method:post
+    data:{username,email,password}
+    authorization:nill
+    status:completed
+
+2.api for fetching token
+
+    url:http://127.0.0.1:8000/api/token/
+    method:post
+    data:{username,password}
+    authorization:nill
+    status:completed
+
+3.api for fetching all products
+
+    url:http://127.0.0.1:8000/api/products/
+    method:get
+    data:nill
+    authorization:Token
+
+4.api for fetching specific product detail
+
+    url:http://127.0.0.1:8000/api/products/{id}/
+    method:get
+    data:nill
+    authorization:Token
+
+5.api for adding a specific product to a basket
+localhost:8000/api/products/{1}/add_to_basket/
+data:{qty}
+authorization:Token
+
+6.list basket item of authenticated user with number of items in their basket 
+localhost:8000/api/baskets/
+method:get
+data:nill
+authorization-Token
+
+
+
+7.update a basket item
+8.remove a basket item   
